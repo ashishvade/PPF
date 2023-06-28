@@ -1,0 +1,61 @@
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<div class="container">
+    <h1>PPF calculator</h1>
+    <div class="col-xl-6">
+    <ul>
+        <li>
+        Amount
+    </li>
+        <li>
+            <input type="text" id="txt1" class="form-control">
+        </li>
+        <li>
+            duration
+        </li>
+            <li>
+                <input type="text" id="txt2" class="form-control">
+            </li>
+            <li>
+                Rate of interest
+            </li>
+                <li>
+                    <input type="text" id="txt3" class="form-control">
+                </li>
+                
+                <li>
+                    <button class="btn btn-dark" onclick="myfun()">Calculate</button>
+                </li>
+    </ul>
+    <h1>
+        PPF CHART
+    </h1>
+    <table class="table">
+<thead>
+    <tr>
+        <th>year</th>
+        <th>opening balance</th>
+        <th>Amount</th>
+        <th>Interest</th>
+        <th>Closing Balance</th>
+    </tr>
+</thead>
+
+    <tbody id="finalAnswer"></tbody>
+
+    </table>
+</div>
+<div class="col-xl-6">
+    hi
+</div>
+</div>
+<style>
+    ul{
+        list-style: none;
+    }
+    li{
+        margin: 10px;
+    }
+</style>
+<script src="ppf.js"></script>
